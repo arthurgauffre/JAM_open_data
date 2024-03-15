@@ -1,0 +1,805 @@
+{
+    "total_count": 963,
+    "results": [
+        {
+            "name": "Torcy",
+            "coordinates": {
+                "lon": 2.65078,
+                "lat": 48.85064
+            },
+            "population": 24386
+        },
+        {
+            "name": "Solli\u00e8s-Pont",
+            "coordinates": {
+                "lon": 6.04115,
+                "lat": 43.19009
+            },
+            "population": 12052
+        },
+        {
+            "name": "Sceaux",
+            "coordinates": {
+                "lon": 2.29026,
+                "lat": 48.77644
+            },
+            "population": 21511
+        },
+        {
+            "name": "Saumur",
+            "coordinates": {
+                "lon": -0.07808,
+                "lat": 47.25931
+            },
+            "population": 33229
+        },
+        {
+            "name": "Sainte-Marguerite",
+            "coordinates": {
+                "lon": 5.40125,
+                "lat": 43.26196
+            },
+            "population": 19997
+        },
+        {
+            "name": "Ramonville-Saint-Agne",
+            "coordinates": {
+                "lon": 1.47491,
+                "lat": 43.54618
+            },
+            "population": 12573
+        },
+        {
+            "name": "Pornichet",
+            "coordinates": {
+                "lon": -2.33794,
+                "lat": 47.26682
+            },
+            "population": 10584
+        },
+        {
+            "name": "Pontivy",
+            "coordinates": {
+                "lon": -2.96645,
+                "lat": 48.06835
+            },
+            "population": 16752
+        },
+        {
+            "name": "Pontarlier",
+            "coordinates": {
+                "lon": 6.35542,
+                "lat": 46.90347
+            },
+            "population": 20313
+        },
+        {
+            "name": "Plougastel-Daoulas",
+            "coordinates": {
+                "lon": -4.36978,
+                "lat": 48.37368
+            },
+            "population": 13679
+        },
+        {
+            "name": "Montigny-l\u00e8s-Cormeilles",
+            "coordinates": {
+                "lon": 2.20035,
+                "lat": 48.98201
+            },
+            "population": 17910
+        },
+        {
+            "name": "Montataire",
+            "coordinates": {
+                "lon": 2.43777,
+                "lat": 49.259
+            },
+            "population": 12031
+        },
+        {
+            "name": "Maromme",
+            "coordinates": {
+                "lon": 1.02375,
+                "lat": 49.47925
+            },
+            "population": 12412
+        },
+        {
+            "name": "Luc\u00e9",
+            "coordinates": {
+                "lon": 1.46359,
+                "lat": 48.43689
+            },
+            "population": 17780
+        },
+        {
+            "name": "Longwy",
+            "coordinates": {
+                "lon": 5.76192,
+                "lat": 49.5217
+            },
+            "population": 14695
+        },
+        {
+            "name": "Li\u00e9vin",
+            "coordinates": {
+                "lon": 2.78068,
+                "lat": 50.4198
+            },
+            "population": 34370
+        },
+        {
+            "name": "Le Cannet",
+            "coordinates": {
+                "lon": 7.01912,
+                "lat": 43.57662
+            },
+            "population": 43353
+        },
+        {
+            "name": "Laval",
+            "coordinates": {
+                "lon": -0.77019,
+                "lat": 48.07247
+            },
+            "population": 50489
+        },
+        {
+            "name": "Lanester",
+            "coordinates": {
+                "lon": -3.3393,
+                "lat": 47.76316
+            },
+            "population": 24352
+        },
+        {
+            "name": "Avrill\u00e9",
+            "coordinates": {
+                "lon": -0.58955,
+                "lat": 47.50663
+            },
+            "population": 13723
+        },
+        {
+            "name": "Avion",
+            "coordinates": {
+                "lon": 2.83053,
+                "lat": 50.41038
+            },
+            "population": 18470
+        },
+        {
+            "name": "Aurillac",
+            "coordinates": {
+                "lon": 2.43983,
+                "lat": 44.92539
+            },
+            "population": 34724
+        },
+        {
+            "name": "Alen\u00e7on",
+            "coordinates": {
+                "lon": 0.09311,
+                "lat": 48.43476
+            },
+            "population": 30786
+        },
+        {
+            "name": "Joigny",
+            "coordinates": {
+                "lon": 3.40096,
+                "lat": 47.98288
+            },
+            "population": 11527
+        },
+        {
+            "name": "Ivry-sur-Seine",
+            "coordinates": {
+                "lon": 2.38487,
+                "lat": 48.81568
+            },
+            "population": 57897
+        },
+        {
+            "name": "Istres",
+            "coordinates": {
+                "lon": 4.98747,
+                "lat": 43.51345
+            },
+            "population": 44373
+        },
+        {
+            "name": "Hirson",
+            "coordinates": {
+                "lon": 4.08259,
+                "lat": 49.92262
+            },
+            "population": 11133
+        },
+        {
+            "name": "Herblay",
+            "coordinates": {
+                "lon": 2.1699,
+                "lat": 48.98994
+            },
+            "population": 25153
+        },
+        {
+            "name": "Hautmont",
+            "coordinates": {
+                "lon": 3.92143,
+                "lat": 50.25077
+            },
+            "population": 15540
+        },
+        {
+            "name": "Grasse",
+            "coordinates": {
+                "lon": 6.92537,
+                "lat": 43.65783
+            },
+            "population": 47581
+        },
+        {
+            "name": "Foug\u00e8res",
+            "coordinates": {
+                "lon": -1.19961,
+                "lat": 48.35157
+            },
+            "population": 23719
+        },
+        {
+            "name": "Eysines",
+            "coordinates": {
+                "lon": -0.65141,
+                "lat": 44.88442
+            },
+            "population": 21394
+        },
+        {
+            "name": "Enghien-les-Bains",
+            "coordinates": {
+                "lon": 2.31667,
+                "lat": 48.96667
+            },
+            "population": 10951
+        },
+        {
+            "name": "Croissy-sur-Seine",
+            "coordinates": {
+                "lon": 2.13836,
+                "lat": 48.87925
+            },
+            "population": 10751
+        },
+        {
+            "name": "Claye-Souilly",
+            "coordinates": {
+                "lon": 2.68566,
+                "lat": 48.94492
+            },
+            "population": 11069
+        },
+        {
+            "name": "Carpentras",
+            "coordinates": {
+                "lon": 5.04813,
+                "lat": 44.05507
+            },
+            "population": 29709
+        },
+        {
+            "name": "Bonneville",
+            "coordinates": {
+                "lon": 6.40726,
+                "lat": 46.0802
+            },
+            "population": 11722
+        },
+        {
+            "name": "Bayonne",
+            "coordinates": {
+                "lon": -1.473,
+                "lat": 43.49316
+            },
+            "population": 44396
+        },
+        {
+            "name": "Le Camas",
+            "coordinates": {
+                "lon": 5.39415,
+                "lat": 43.29469
+            },
+            "population": 16585
+        },
+        {
+            "name": "Thionville",
+            "coordinates": {
+                "lon": 6.16044,
+                "lat": 49.35994
+            },
+            "population": 44311
+        },
+        {
+            "name": "Sucy-en-Brie",
+            "coordinates": {
+                "lon": 2.53474,
+                "lat": 48.76872
+            },
+            "population": 25014
+        },
+        {
+            "name": "Sens",
+            "coordinates": {
+                "lon": 3.28328,
+                "lat": 48.19738
+            },
+            "population": 28700
+        },
+        {
+            "name": "Sainte-Genevi\u00e8ve-des-Bois",
+            "coordinates": {
+                "lon": 2.31965,
+                "lat": 48.64682
+            },
+            "population": 33689
+        },
+        {
+            "name": "Saint-Barnab\u00e9",
+            "coordinates": {
+                "lon": 5.41667,
+                "lat": 43.3
+            },
+            "population": 12070
+        },
+        {
+            "name": "Rumilly",
+            "coordinates": {
+                "lon": 5.94513,
+                "lat": 45.86116
+            },
+            "population": 13077
+        },
+        {
+            "name": "Mitry-Mory",
+            "coordinates": {
+                "lon": 2.61667,
+                "lat": 48.98333
+            },
+            "population": 18562
+        },
+        {
+            "name": "Metz",
+            "coordinates": {
+                "lon": 6.17269,
+                "lat": 49.11911
+            },
+            "population": 123914
+        },
+        {
+            "name": "M\u00e9rignac",
+            "coordinates": {
+                "lon": -0.64512,
+                "lat": 44.84247
+            },
+            "population": 69791
+        },
+        {
+            "name": "Martigues",
+            "coordinates": {
+                "lon": 5.05526,
+                "lat": 43.40735
+            },
+            "population": 45749
+        },
+        {
+            "name": "Marignane",
+            "coordinates": {
+                "lon": 5.21462,
+                "lat": 43.41727
+            },
+            "population": 35873
+        },
+        {
+            "name": "Mandelieu-la-Napoule",
+            "coordinates": {
+                "lon": 6.93734,
+                "lat": 43.54577
+            },
+            "population": 19292
+        },
+        {
+            "name": "Libourne",
+            "coordinates": {
+                "lon": -0.24186,
+                "lat": 44.91449
+            },
+            "population": 24240
+        },
+        {
+            "name": "Le Pradet",
+            "coordinates": {
+                "lon": 6.0235,
+                "lat": 43.10545
+            },
+            "population": 12343
+        },
+        {
+            "name": "Le Petit-Quevilly",
+            "coordinates": {
+                "lon": 1.06155,
+                "lat": 49.41338
+            },
+            "population": 22691
+        },
+        {
+            "name": "Le Havre",
+            "coordinates": {
+                "lon": 0.10785,
+                "lat": 49.49346
+            },
+            "population": 185972
+        },
+        {
+            "name": "Laxou",
+            "coordinates": {
+                "lon": 6.14929,
+                "lat": 48.68372
+            },
+            "population": 16323
+        },
+        {
+            "name": "Laon",
+            "coordinates": {
+                "lon": 3.62714,
+                "lat": 49.5631
+            },
+            "population": 28688
+        },
+        {
+            "name": "La Chapelle-sur-Erdre",
+            "coordinates": {
+                "lon": -1.55239,
+                "lat": 47.29964
+            },
+            "population": 18481
+        },
+        {
+            "name": "Guilherand-Granges",
+            "coordinates": {
+                "lon": 4.87372,
+                "lat": 44.93278
+            },
+            "population": 11365
+        },
+        {
+            "name": "Gaillard",
+            "coordinates": {
+                "lon": 6.20693,
+                "lat": 46.1853
+            },
+            "population": 11660
+        },
+        {
+            "name": "Digne-les-Bains",
+            "coordinates": {
+                "lon": 6.23199,
+                "lat": 44.09252
+            },
+            "population": 18986
+        },
+        {
+            "name": "Colombes",
+            "coordinates": {
+                "lon": 2.25404,
+                "lat": 48.91882
+            },
+            "population": 82300
+        },
+        {
+            "name": "Clichy-sous-Bois",
+            "coordinates": {
+                "lon": 2.55323,
+                "lat": 48.9102
+            },
+            "population": 29062
+        },
+        {
+            "name": "Chevigny-Saint-Sauveur",
+            "coordinates": {
+                "lon": 5.13367,
+                "lat": 47.29908
+            },
+            "population": 10620
+        },
+        {
+            "name": "Ch\u00e2tenay-Malabry",
+            "coordinates": {
+                "lon": 2.26655,
+                "lat": 48.76507
+            },
+            "population": 32715
+        },
+        {
+            "name": "Brignais",
+            "coordinates": {
+                "lon": 4.75418,
+                "lat": 45.67383
+            },
+            "population": 12427
+        },
+        {
+            "name": "Bordeaux",
+            "coordinates": {
+                "lon": -0.5805,
+                "lat": 44.84044
+            },
+            "population": 260958
+        },
+        {
+            "name": "Argeles",
+            "coordinates": {
+                "lon": 3.02253,
+                "lat": 42.54714
+            },
+            "population": 10044
+        },
+        {
+            "name": "Albi",
+            "coordinates": {
+                "lon": 2.148,
+                "lat": 43.9298
+            },
+            "population": 52409
+        },
+        {
+            "name": "Lyon 07",
+            "coordinates": {
+                "lon": 4.84197,
+                "lat": 45.74525
+            },
+            "population": 82573
+        },
+        {
+            "name": "Vend\u00f4me",
+            "coordinates": {
+                "lon": 1.06556,
+                "lat": 47.79292
+            },
+            "population": 19226
+        },
+        {
+            "name": "Vand\u0153uvre-l\u00e8s-Nancy",
+            "coordinates": {
+                "lon": 6.17114,
+                "lat": 48.66115
+            },
+            "population": 31785
+        },
+        {
+            "name": "Valenton",
+            "coordinates": {
+                "lon": 2.46467,
+                "lat": 48.74527
+            },
+            "population": 11969
+        },
+        {
+            "name": "Thiers",
+            "coordinates": {
+                "lon": 3.54758,
+                "lat": 45.85654
+            },
+            "population": 13739
+        },
+        {
+            "name": "Saint-Ouen-l'Aum\u00f4ne",
+            "coordinates": {
+                "lon": 2.12134,
+                "lat": 49.04353
+            },
+            "population": 22977
+        },
+        {
+            "name": "Saint-M\u00e9dard-en-Jalles",
+            "coordinates": {
+                "lon": -0.71779,
+                "lat": 44.8955
+            },
+            "population": 29742
+        },
+        {
+            "name": "Saint-Est\u00e8ve",
+            "coordinates": {
+                "lon": 2.84152,
+                "lat": 42.7131
+            },
+            "population": 10403
+        },
+        {
+            "name": "Saint-Chamond",
+            "coordinates": {
+                "lon": 4.51294,
+                "lat": 45.4759
+            },
+            "population": 38014
+        },
+        {
+            "name": "Pantin",
+            "coordinates": {
+                "lon": 2.40935,
+                "lat": 48.89437
+            },
+            "population": 52922
+        },
+        {
+            "name": "Palaiseau",
+            "coordinates": {
+                "lon": 2.2498,
+                "lat": 48.71828
+            },
+            "population": 31987
+        },
+        {
+            "name": "Marmande",
+            "coordinates": {
+                "lon": 0.16546,
+                "lat": 44.50361
+            },
+            "population": 19069
+        },
+        {
+            "name": "Les Mureaux",
+            "coordinates": {
+                "lon": 1.90972,
+                "lat": 48.99173
+            },
+            "population": 32134
+        },
+        {
+            "name": "Auchel",
+            "coordinates": {
+                "lon": 2.47346,
+                "lat": 50.50345
+            },
+            "population": 11419
+        },
+        {
+            "name": "Asni\u00e8res-sur-Seine",
+            "coordinates": {
+                "lon": 2.28333,
+                "lat": 48.91667
+            },
+            "population": 86742
+        },
+        {
+            "name": "Arnouville",
+            "coordinates": {
+                "lon": 2.41667,
+                "lat": 48.98333
+            },
+            "population": 12783
+        },
+        {
+            "name": "Arles",
+            "coordinates": {
+                "lon": 4.63031,
+                "lat": 43.67681
+            },
+            "population": 53431
+        },
+        {
+            "name": "Annonay",
+            "coordinates": {
+                "lon": 4.6707,
+                "lat": 45.23992
+            },
+            "population": 18423
+        },
+        {
+            "name": "Annecy-le-Vieux",
+            "coordinates": {
+                "lon": 6.14393,
+                "lat": 45.91971
+            },
+            "population": 21521
+        },
+        {
+            "name": "Lyon 02",
+            "coordinates": {
+                "lon": 4.83089,
+                "lat": 45.75423
+            },
+            "population": 31303
+        },
+        {
+            "name": "Marseille 14",
+            "coordinates": {
+                "lon": 5.38004,
+                "lat": 43.34447
+            },
+            "population": 61920
+        },
+        {
+            "name": "Rouet",
+            "coordinates": {
+                "lon": 5.39158,
+                "lat": 43.27808
+            },
+            "population": 12178
+        },
+        {
+            "name": "Harnes",
+            "coordinates": {
+                "lon": 2.90481,
+                "lat": 50.44643
+            },
+            "population": 13569
+        },
+        {
+            "name": "Gagny",
+            "coordinates": {
+                "lon": 2.53333,
+                "lat": 48.88333
+            },
+            "population": 38134
+        },
+        {
+            "name": "Francheville",
+            "coordinates": {
+                "lon": 4.76358,
+                "lat": 45.73637
+            },
+            "population": 12053
+        },
+        {
+            "name": "Corbeil-Essonnes",
+            "coordinates": {
+                "lon": 2.48757,
+                "lat": 48.60603
+            },
+            "population": 40527
+        },
+        {
+            "name": "Caen",
+            "coordinates": {
+                "lon": -0.35912,
+                "lat": 49.18585
+            },
+            "population": 110624
+        },
+        {
+            "name": "Brive-la-Gaillarde",
+            "coordinates": {
+                "lon": 1.53326,
+                "lat": 45.1589
+            },
+            "population": 53466
+        },
+        {
+            "name": "Belfort",
+            "coordinates": {
+                "lon": 6.85385,
+                "lat": 47.64218
+            },
+            "population": 54562
+        },
+        {
+            "name": "Auray",
+            "coordinates": {
+                "lon": -2.98421,
+                "lat": 47.66692
+            },
+            "population": 12269
+        },
+        {
+            "name": "Aix-les-Bains",
+            "coordinates": {
+                "lon": 5.90863,
+                "lat": 45.69173
+            },
+            "population": 27651
+        }
+    ]
+}
