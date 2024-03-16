@@ -10,6 +10,8 @@ The player is presented with the profiles of different french cities, and must j
 
 ### Install:
 pip install pygame
+curl -fsSL https://ollama.com/install.sh | sh
+ollama pull mistral
 
 ### Get rights:
 chmod 577 smash_or_pass.py
