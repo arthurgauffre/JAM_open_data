@@ -6,6 +6,7 @@ import random
 import requests
 import os
 import re
+import json
 
 def download_image(url, filename):
     try:
@@ -95,16 +96,7 @@ def get_random_city():
     if response.status_code == 200:
         data = response.json()
         data_filter = [data['results'][index] for index in range(0, len(data['results'])) if ' ' not in data['results'][index]['name']]
-        dict_data = {}
-        for index in range(0, len(data_filter)):
-            name = data_filter[index]['name']
-            coordinates = data_filter[index]['coordinates']
-            population = data_filter[index]['population']
-            dict_data[index] = {'name': name, 'Coordinates': coordinates, 'Population': population, 'Like': 0}
-        save_city_data(dict_data)
-        print("City data saved successfully.")
-    else:
-        print("La requête a échoué avec le code :", response.status_code)
+        return data_filter
 
 def smash_or_pass_launch(width, height, cities_info):
     pygame.init()
@@ -126,7 +118,7 @@ def smash_or_pass_launch(width, height, cities_info):
     x_button = pygame.transform.scale(x_button, button_size)
 
     # Calculate button positions
-    space_between_buttons = 200
+    space_between_buttons = 300
     total_button_height = max(like_button.get_height(), x_button.get_height())
     button_y = (height - total_button_height) // 1.2
     total_button_width = like_button.get_width() + space_between_buttons + x_button.get_width()
@@ -136,24 +128,13 @@ def smash_or_pass_launch(width, height, cities_info):
     x_button_rect = like_button.get_rect(midbottom=(button_x + like_button.get_width() // 2, button_y + total_button_height))
     like_button_rect = x_button.get_rect(midbottom=(button_x + like_button.get_width() + space_between_buttons + x_button.get_width() // 2, button_y + total_button_height))
     
-    random_city = random.choice(cities_info)
-    lines = []
-    current_line = ""
-    # for word in city_description.split():
-    #     test_line = current_line + word + " "
-    #     if font.size(test_line)[0] < width:  # Vérifie si le mot peut être ajouté à la ligne
-    #         current_line = test_line
-    #     else:  # Si la ligne dépasse la largeur de l'écran, ajoutez-la à la liste des lignes et commencez une nouvelle ligne
-    #         lines.append(current_line)
-    #         current_line = word + " "
-    # lines.append(current_line)
-    # city_description_surface = [font.render(line, True, (0, 0, 0)) for line in lines]
+    # Main loop
+    random_city = cities_info[random.randint(0, len(cities_info) - 1)]
     y_pos = 0  # Position of the first line
 
-    get_image_url("Poitiers")
+    get_image_url(random_city['name'])
     image = pygame.image.load("images/current_image.jpg")
     image = pygame.transform.scale(image, (500, 300))
-
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -163,12 +144,17 @@ def smash_or_pass_launch(width, height, cities_info):
                 if event.button == 1:  # Left mouse button clicked
                     mouse_pos = pygame.mouse.get_pos()
                     if like_button_rect.collidepoint(mouse_pos):
-                        random_city['Like'] += 1
-                        update_file_with_data("cities_info.txt", cities_info)
-                        random_city = random.choice(cities_info)
+                        random_city = cities_info[random.randint(0, len(cities_info) - 1)]
                         remove_file_from_images("current_image.jpg")
+                        get_image_url(random_city['name'])
+                        image = pygame.image.load("images/current_image.jpg")
+                        image = pygame.transform.scale(image, (500, 300))
                     elif x_button_rect.collidepoint(mouse_pos):
-                        print("X")
+                        random_city = cities_info[random.randint(0, len(cities_info) - 1)]
+                        remove_file_from_images("current_image.jpg")
+                        get_image_url(random_city['name'])
+                        image = pygame.image.load("images/current_image.jpg")
+                        image = pygame.transform.scale(image, (500, 300))
         
         screen.fill((255, 255, 255))  # Fill the screen with white color
         
@@ -189,8 +175,12 @@ def smash_or_pass_launch(width, height, cities_info):
         x_button_rect = x_button.get_rect(bottomleft=(20, height - 20))
         screen.blit(x_button, x_button_rect)
         
+        # Display the name of the city at the middle-top of the window
+        city_name_text = font.render(random_city['name'], True, (0, 0, 0))
+        city_name_rect = city_name_text.get_rect(center=(width // 2, height // 10))
+        screen.blit(city_name_text, city_name_rect)
+        
         pygame.display.update()
 
 if __name__ == "__main__":
-    get_image_url("Poitiers")
     smash_or_pass_launch(600, 800, get_random_city())
