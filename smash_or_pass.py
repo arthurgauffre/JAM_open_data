@@ -158,18 +158,12 @@ def smash_or_pass_launch(width, height, cities_info):
         
         screen.fill((255, 255, 255))  # Fill the screen with white color
         
-        screen.blit(image, (width // 2 - 250, 200))
+        screen.blit(image, (width // 2 - 250, 380))
         # Display buttons at their positions
         screen.blit(like_button, like_button_rect)
 
         logo_rect = logo.get_rect(center=(width // 2, 100))
         screen.blit(logo, logo_rect)
-
-        # Display city description
-        # for text_surface in city_description_surface:
-        #     text_rect = text_surface.get_rect(midtop=(width // 2, y_pos))
-        #     screen.blit(text_surface, text_rect)
-        #     y_pos += text_surface.get_height()
 
         # Display X button at the bottom left corner
         x_button_rect = x_button.get_rect(bottomleft=(20, height - 20))
@@ -177,7 +171,7 @@ def smash_or_pass_launch(width, height, cities_info):
         
         # Display the name of the city at the middle-top of the window
         city_name_text = font.render(random_city['name'], True, (0, 0, 0))
-        city_name_rect = city_name_text.get_rect(center=(width // 2, height // 10))
+        city_name_rect = city_name_text.get_rect(center=(width // 2, height // 5))
         screen.blit(city_name_text, city_name_rect)
         
         pygame.display.update()
