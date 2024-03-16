@@ -3,13 +3,63 @@
 import subprocess
 import pygame
 import sys
+import random
+import json
 
 def generate_city_description(city_name):
     prompt = f"créer une description de max 200 caractères sur la ville de {city_name}."
     command_output = subprocess.run(["ollama", "run", "mistral", prompt], capture_output=True).stdout.decode('utf-8')
     return command_output
 
-def smash_or_pass_launch(width, height):
+def read_file_info(filename):
+    cities_info = []
+
+    with open(filename, 'r') as file:
+        city_info = {}
+        for line in file:
+            line = line.strip()
+            if line.startswith('Name:'):
+                city_info['Name'] = line.split(': ')[1]
+            elif line.startswith('Coordinates:'):
+                coords_str = line.split(': ')
+                if len(coords_str) == 2:
+                    lon_lat_str = coords_str[1].strip('{}').split(', ')
+                    if len(lon_lat_str) == 2:
+                        lon, lat = map(float, lon_lat_str)
+                        city_info['Coordinates'] = {'lon': lon, 'lat': lat}
+            elif line.startswith('Population:'):
+                population_str = line.split(': ')
+                if len(population_str) == 2:
+                    city_info['Population'] = int(population_str[1])
+            elif line.startswith('Like:'):
+                like_str = line.split(': ')
+                if len(like_str) == 2:
+                    city_info['Like'] = int(like_str[1])
+                    cities_info.append(city_info)
+                    city_info = {}
+
+    return cities_info
+
+    return cities_info
+
+def update_file_with_data(filename, new_data):
+    # Convert the dictionary data into string format
+    new_lines = []
+    for city_info in new_data:
+        name = city_info.get('Name', 'Unknown')
+        coordinates = city_info.get('Coordinates', '')
+        population = city_info.get('Population', 0)
+        like = city_info.get('Like', 0)
+        new_lines.append(f"Name: {name}\n")
+        new_lines.append(f"Coordinates: {coordinates}\n")
+        new_lines.append(f"Population: {population}\n")
+        new_lines.append(f"Like: {like}\n\n")
+
+    # Write the new data to the file
+    with open(filename, 'w') as file:
+        file.writelines(new_lines)
+
+def smash_or_pass_launch(width, height, cities_info):
     pygame.init()
     screen = pygame.display.set_mode((width, height))
     pygame.display.set_caption("Smash or Pass Game")
@@ -39,22 +89,19 @@ def smash_or_pass_launch(width, height):
     like_button_rect = like_button.get_rect(midbottom=(button_x + like_button.get_width() // 2, button_y + total_button_height))
     x_button_rect = x_button.get_rect(midbottom=(button_x + like_button.get_width() + space_between_buttons + x_button.get_width() // 2, button_y + total_button_height))
     
-    # Add text description of the city
-    city_name = "Paris"
-    city_description = "La vie est un voyage imprévisible. Faisons de chaque instant une aventure. Apprécions les petits bonheurs et embrassons les défis avec courage."
+    random_city = random.choice(cities_info)
     lines = []
     current_line = ""
-    for word in city_description.split():
-        test_line = current_line + word + " "
-        if font.size(test_line)[0] < width:  # Vérifie si le mot peut être ajouté à la ligne
-            current_line = test_line
-        else:  # Si la ligne dépasse la largeur de l'écran, ajoutez-la à la liste des lignes et commencez une nouvelle ligne
-            lines.append(current_line)
-            current_line = word + " "
-    lines.append(current_line)
-    city_description_surface = [font.render(line, True, (0, 0, 0)) for line in lines]
+    # for word in city_description.split():
+    #     test_line = current_line + word + " "
+    #     if font.size(test_line)[0] < width:  # Vérifie si le mot peut être ajouté à la ligne
+    #         current_line = test_line
+    #     else:  # Si la ligne dépasse la largeur de l'écran, ajoutez-la à la liste des lignes et commencez une nouvelle ligne
+    #         lines.append(current_line)
+    #         current_line = word + " "
+    # lines.append(current_line)
+    # city_description_surface = [font.render(line, True, (0, 0, 0)) for line in lines]
     y_pos = 0  # Position of the first line
-
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -64,9 +111,11 @@ def smash_or_pass_launch(width, height):
                 if event.button == 1:  # Left mouse button clicked
                     mouse_pos = pygame.mouse.get_pos()
                     if like_button_rect.collidepoint(mouse_pos):
-                        print("Smash")
+                        random_city['Like'] += 1
+                        update_file_with_data("cities_info.txt", cities_info)
+                        random_city = random.choice(cities_info)
                     elif x_button_rect.collidepoint(mouse_pos):
-                        print("Pass")
+                        random_city = random.choice(cities_info)
         
         screen.fill((255, 255, 255))  # Fill the screen with white color
         
@@ -77,10 +126,10 @@ def smash_or_pass_launch(width, height):
         screen.blit(logo, logo_rect)
 
         # Display city description
-        for text_surface in city_description_surface:
-            text_rect = text_surface.get_rect(midtop=(width // 2, y_pos))
-            screen.blit(text_surface, text_rect)
-            y_pos += text_surface.get_height()
+        # for text_surface in city_description_surface:
+        #     text_rect = text_surface.get_rect(midtop=(width // 2, y_pos))
+        #     screen.blit(text_surface, text_rect)
+        #     y_pos += text_surface.get_height()
 
         # Display X button at the bottom left corner
         x_button_rect = x_button.get_rect(bottomleft=(20, height - 20))
@@ -89,4 +138,4 @@ def smash_or_pass_launch(width, height):
         pygame.display.update()
 
 if __name__ == "__main__":
-    smash_or_pass_launch(800, 1000)
+    smash_or_pass_launch(600, 800, read_file_info("cities_info.txt"))

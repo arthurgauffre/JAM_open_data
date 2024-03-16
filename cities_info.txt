@@ -1,500 +1,450 @@
 Name: Vitry-sur-Seine
-Coordinates: {'lon': 2.40332, 'lat': 48.78716}
+Coordinates: 
 Population: 81001
 Like: 0
 
 Name: Nancy
-Coordinates: {'lon': 6.18496, 'lat': 48.68439}
+Coordinates: 
 Population: 105058
 Like: 0
 
 Name: Le Mans
-Coordinates: {'lon': 0.20251, 'lat': 48.0021}
+Coordinates: 
 Population: 144515
 Like: 0
 
 Name: Aubervilliers
-Coordinates: {'lon': 2.38333, 'lat': 48.91667}
+Coordinates: 
 Population: 70914
 Like: 0
 
 Name: Metz
-Coordinates: {'lon': 6.17269, 'lat': 49.11911}
+Coordinates: 
 Population: 123914
 Like: 0
 
 Name: Mérignac
-Coordinates: {'lon': -0.64512, 'lat': 44.84247}
+Coordinates: 
 Population: 69791
 Like: 0
 
 Name: Le Havre
-Coordinates: {'lon': 0.10785, 'lat': 49.49346}
+Coordinates: 
 Population: 185972
 Like: 0
 
-Name: Lyon 07
-Coordinates: {'lon': 4.84197, 'lat': 45.74525}
-Population: 82573
-Like: 0
-
 Name: Colombes
-Coordinates: {'lon': 2.25404, 'lat': 48.91882}
+Coordinates: 
 Population: 82300
 Like: 0
 
 Name: Bordeaux
-Coordinates: {'lon': -0.5805, 'lat': 44.84044}
+Coordinates: 
 Population: 260958
 Like: 0
 
 Name: Dunkerque
-Coordinates: {'lon': 2.37681, 'lat': 51.0344}
+Coordinates: 
 Population: 71287
 Like: 0
 
 Name: La Roche-sur-Yon
-Coordinates: {'lon': -1.42757, 'lat': 46.66974}
+Coordinates: 
 Population: 59410
 Like: 0
 
 Name: Quimper
-Coordinates: {'lon': -4.09795, 'lat': 47.99597}
+Coordinates: 
 Population: 63849
 Like: 0
 
 Name: La Rochelle
-Coordinates: {'lon': -1.15222, 'lat': 46.16308}
+Coordinates: 
 Population: 76810
 Like: 0
 
 Name: Avignon
-Coordinates: {'lon': 4.80892, 'lat': 43.94834}
+Coordinates: 
 Population: 89769
 Like: 0
 
 Name: Argenteuil
-Coordinates: {'lon': 2.24744, 'lat': 48.94788}
+Coordinates: 
 Population: 101475
 Like: 0
 
 Name: Besançon
-Coordinates: {'lon': 6.01815, 'lat': 47.24878}
+Coordinates: 
 Population: 128426
 Like: 0
 
 Name: Ivry-sur-Seine
-Coordinates: {'lon': 2.38487, 'lat': 48.81568}
+Coordinates: 
 Population: 57897
 Like: 0
 
 Name: Amiens
-Coordinates: {'lon': 2.3, 'lat': 49.9}
+Coordinates: 
 Population: 143086
 Like: 0
 
 Name: Tours
-Coordinates: {'lon': 0.70398, 'lat': 47.39484}
+Coordinates: 
 Population: 141621
 Like: 0
 
 Name: Béziers
-Coordinates: {'lon': 3.21402, 'lat': 43.34122}
+Coordinates: 
 Population: 74081
 Like: 0
 
 Name: Évreux
-Coordinates: {'lon': 1.15082, 'lat': 49.02414}
+Coordinates: 
 Population: 57795
 Like: 0
 
 Name: Dijon
-Coordinates: {'lon': 5.01667, 'lat': 47.31667}
+Coordinates: 
 Population: 158002
 Like: 0
 
 Name: Cannes
-Coordinates: {'lon': 7.01275, 'lat': 43.55135}
+Coordinates: 
 Population: 74545
 Like: 0
 
-Name: Lyon 03
-Coordinates: {'lon': 4.85184, 'lat': 45.76124}
-Population: 102725
-Like: 0
-
-Name: Marseille 08
-Coordinates: {'lon': 5.3821, 'lat': 43.27083}
-Population: 78837
-Like: 0
-
-Name: Marseille 11
-Coordinates: {'lon': 5.4384, 'lat': 43.2907}
-Population: 56792
-Like: 0
-
 Name: Créteil
-Coordinates: {'lon': 2.46569, 'lat': 48.79266}
+Coordinates: 
 Population: 84833
 Like: 0
 
 Name: Antony
-Coordinates: {'lon': 2.29668, 'lat': 48.75329}
+Coordinates: 
 Population: 59845
 Like: 0
 
-Name: Lyon 08
-Coordinates: {'lon': 4.86866, 'lat': 45.73626}
-Population: 86154
-Like: 0
-
 Name: Pau
-Coordinates: {'lon': -0.35583, 'lat': 43.31117}
+Coordinates: 
 Population: 82697
 Like: 0
 
 Name: Courbevoie
-Coordinates: {'lon': 2.25666, 'lat': 48.89672}
+Coordinates: 
 Population: 85158
 Like: 0
 
-Name: Marseille 09
-Coordinates: {'lon': 5.4057, 'lat': 43.25433}
-Population: 76868
-Like: 0
-
 Name: Clichy
-Coordinates: {'lon': 2.30952, 'lat': 48.90018}
+Coordinates: 
 Population: 57467
 Like: 0
 
 Name: Boulogne-Billancourt
-Coordinates: {'lon': 2.24128, 'lat': 48.83545}
+Coordinates: 
 Population: 108782
 Like: 0
 
 Name: Pessac
-Coordinates: {'lon': -0.6324, 'lat': 44.80565}
+Coordinates: 
 Population: 57944
 Like: 0
 
 Name: Marseille
-Coordinates: {'lon': 5.38107, 'lat': 43.29695}
+Coordinates: 
 Population: 870731
 Like: 0
 
 Name: Lyon
-Coordinates: {'lon': 4.84671, 'lat': 45.74846}
+Coordinates: 
 Population: 522969
 Like: 0
 
-Name: Marseille 12
-Coordinates: {'lon': 5.43617, 'lat': 43.29614}
-Population: 58734
-Like: 0
-
 Name: Valence
-Coordinates: {'lon': 4.90956, 'lat': 44.9256}
+Coordinates: 
 Population: 63864
 Like: 0
 
 Name: Versailles
-Coordinates: {'lon': 2.13424, 'lat': 48.80359}
+Coordinates: 
 Population: 85416
 Like: 0
 
 Name: Reims
-Coordinates: {'lon': 4.02853, 'lat': 49.26526}
+Coordinates: 
 Population: 196565
 Like: 0
 
 Name: Lorient
-Coordinates: {'lon': -3.37177, 'lat': 47.74817}
+Coordinates: 
 Population: 58112
 Like: 0
 
 Name: Marne La Vallée
-Coordinates: {'lon': 2.64241, 'lat': 48.83584}
+Coordinates: 
 Population: 318325
 Like: 0
 
 Name: Clermont-Ferrand
-Coordinates: {'lon': 3.08682, 'lat': 45.77969}
+Coordinates: 
 Population: 147865
 Like: 0
 
 Name: Orléans
-Coordinates: {'lon': 1.90389, 'lat': 47.90289}
+Coordinates: 
 Population: 116269
 Like: 0
 
 Name: Calais
-Coordinates: {'lon': 1.85635, 'lat': 50.95194}
+Coordinates: 
 Population: 74433
 Like: 0
 
 Name: Bourges
-Coordinates: {'lon': 2.4, 'lat': 47.08333}
+Coordinates: 
 Population: 67987
 Like: 0
 
 Name: Troyes
-Coordinates: {'lon': 4.08524, 'lat': 48.30073}
+Coordinates: 
 Population: 60785
 Like: 0
 
 Name: Montpellier
-Coordinates: {'lon': 3.87635, 'lat': 43.61093}
+Coordinates: 
 Population: 248252
 Like: 0
 
 Name: Issy-les-Moulineaux
-Coordinates: {'lon': 2.27718, 'lat': 48.82104}
+Coordinates: 
 Population: 61447
 Like: 0
 
 Name: Grenoble
-Coordinates: {'lon': 5.71479, 'lat': 45.17869}
+Coordinates: 
 Population: 158552
 Like: 0
 
 Name: Drancy
-Coordinates: {'lon': 2.44533, 'lat': 48.92578}
+Coordinates: 
 Population: 62488
 Like: 0
 
 Name: Cergy
-Coordinates: {'lon': 2.07613, 'lat': 49.03645}
+Coordinates: 
 Population: 57576
 Like: 0
 
-Name: Marseille 15
-Coordinates: {'lon': 5.35386, 'lat': 43.37224}
-Population: 77770
-Like: 0
-
 Name: Rueil-Malmaison
-Coordinates: {'lon': 2.18967, 'lat': 48.8765}
+Coordinates: 
 Population: 76616
 Like: 0
 
 Name: Poitiers
-Coordinates: {'lon': 0.34348, 'lat': 46.58261}
+Coordinates: 
 Population: 85960
 Like: 0
 
 Name: Nantes
-Coordinates: {'lon': -1.55336, 'lat': 47.21725}
+Coordinates: 
 Population: 318808
 Like: 0
 
 Name: Villeneuve-d'Ascq
-Coordinates: {'lon': 3.16664, 'lat': 50.61669}
+Coordinates: 
 Population: 62400
 Like: 0
 
 Name: Vénissieux
-Coordinates: {'lon': 4.88593, 'lat': 45.69706}
+Coordinates: 
 Population: 57584
 Like: 0
 
 Name: Tourcoing
-Coordinates: {'lon': 3.16117, 'lat': 50.72391}
+Coordinates: 
 Population: 98656
 Like: 0
 
 Name: Saint-Nazaire
-Coordinates: {'lon': -2.2179, 'lat': 47.27506}
+Coordinates: 
 Population: 67054
 Like: 0
 
 Name: Saint-Maur-des-Fossés
-Coordinates: {'lon': 2.49323, 'lat': 48.79395}
+Coordinates: 
 Population: 75402
 Like: 0
 
 Name: Roubaix
-Coordinates: {'lon': 3.17456, 'lat': 50.69421}
+Coordinates: 
 Population: 98828
 Like: 0
 
 Name: Antibes
-Coordinates: {'lon': 7.12487, 'lat': 43.58127}
+Coordinates: 
 Population: 76393
 Like: 0
 
 Name: Strasbourg
-Coordinates: {'lon': 7.74553, 'lat': 48.58392}
+Coordinates: 
 Population: 274845
 Like: 0
 
 Name: Mulhouse
-Coordinates: {'lon': 7.32866, 'lat': 47.75205}
+Coordinates: 
 Population: 111430
 Like: 0
 
 Name: Lille
-Coordinates: {'lon': 3.05858, 'lat': 50.63297}
+Coordinates: 
 Population: 234475
 Like: 0
 
 Name: Aix-en-Provence
-Coordinates: {'lon': 5.44973, 'lat': 43.5283}
+Coordinates: 
 Population: 146821
 Like: 0
 
 Name: Colmar
-Coordinates: {'lon': 7.35584, 'lat': 48.08078}
+Coordinates: 
 Population: 65405
 Like: 0
 
 Name: Chambéry
-Coordinates: {'lon': 5.92079, 'lat': 45.56628}
+Coordinates: 
 Population: 61640
 Like: 0
 
 Name: Brest
-Coordinates: {'lon': -4.48628, 'lat': 48.39029}
+Coordinates: 
 Population: 144899
 Like: 0
 
 Name: Asnières-sur-Seine
-Coordinates: {'lon': 2.28333, 'lat': 48.91667}
+Coordinates: 
 Population: 86742
 Like: 0
 
-Name: Marseille 14
-Coordinates: {'lon': 5.38004, 'lat': 43.34447}
-Population: 61920
-Like: 0
-
 Name: Caen
-Coordinates: {'lon': -0.35912, 'lat': 49.18585}
+Coordinates: 
 Population: 110624
 Like: 0
 
 Name: Villeurbanne
-Coordinates: {'lon': 4.8795, 'lat': 45.76601}
+Coordinates: 
 Population: 131445
 Like: 0
 
 Name: Paris
-Coordinates: {'lon': 2.3488, 'lat': 48.85341}
+Coordinates: 
 Population: 2138551
 Like: 0
 
 Name: Neuilly-sur-Seine
-Coordinates: {'lon': 2.26965, 'lat': 48.8846}
+Coordinates: 
 Population: 61300
 Like: 0
 
 Name: Levallois-Perret
-Coordinates: {'lon': 2.28864, 'lat': 48.89389}
+Coordinates: 
 Population: 62178
 Like: 0
 
 Name: Aulnay-sous-Bois
-Coordinates: {'lon': 2.49402, 'lat': 48.93814}
+Coordinates: 
 Population: 80615
 Like: 0
 
 Name: Perpignan
-Coordinates: {'lon': 2.89541, 'lat': 42.69764}
+Coordinates: 
 Population: 110706
 Like: 0
 
-Name: Marseille 13
-Coordinates: {'lon': 5.40836, 'lat': 43.31856}
-Population: 89316
-Like: 0
-
 Name: Rouen
-Coordinates: {'lon': 1.09932, 'lat': 49.44313}
+Coordinates: 
 Population: 234475
 Like: 0
 
 Name: Rennes
-Coordinates: {'lon': -1.67429, 'lat': 48.11198}
+Coordinates: 
 Population: 220488
 Like: 0
 
 Name: Noisy-le-Grand
-Coordinates: {'lon': 2.56266, 'lat': 48.84979}
+Coordinates: 
 Population: 62420
 Like: 0
 
 Name: Nîmes
-Coordinates: {'lon': 4.35788, 'lat': 43.83665}
+Coordinates: 
 Population: 148236
 Like: 0
 
 Name: Nice
-Coordinates: {'lon': 7.26608, 'lat': 43.70313}
+Coordinates: 
 Population: 342669
 Like: 0
 
 Name: Saint-Quentin-en-Yvelines
-Coordinates: {'lon': 2.01891, 'lat': 48.77186}
+Coordinates: 
 Population: 146598
 Like: 0
 
-Name: Toulon
-Coordinates: {'lon': 5.92836, 'lat': 43.12442}
+Name: Unknown
+Coordinates: 
 Population: 168701
 Like: 0
 
 Name: Saint-Étienne
-Coordinates: {'lon': 4.39, 'lat': 45.43389}
+Coordinates: 
 Population: 176280
 Like: 0
 
 Name: Nanterre
-Coordinates: {'lon': 2.20675, 'lat': 48.89198}
+Coordinates: 
 Population: 86719
 Like: 0
 
 Name: Montreuil
-Coordinates: {'lon': 2.44322, 'lat': 48.86415}
+Coordinates: 
 Population: 111240
 Like: 0
 
 Name: Limoges
-Coordinates: {'lon': 1.24759, 'lat': 45.83362}
+Coordinates: 
 Population: 141176
 Like: 0
 
 Name: La Seyne-sur-Mer
-Coordinates: {'lon': 5.87816, 'lat': 43.10322}
+Coordinates: 
 Population: 62330
 Like: 0
 
 Name: Angers
-Coordinates: {'lon': -0.55202, 'lat': 47.47156}
+Coordinates: 
 Population: 168279
 Like: 0
 
 Name: Sarcelles
-Coordinates: {'lon': 2.37821, 'lat': 48.99739}
+Coordinates: 
 Population: 57979
 Like: 0
 
 Name: Toulouse
-Coordinates: {'lon': 1.44367, 'lat': 43.60426}
+Coordinates: 
 Population: 493465
 Like: 0
 
 Name: Saint-Denis
-Coordinates: {'lon': 2.35387, 'lat': 48.93564}
+Coordinates: 
 Population: 96128
 Like: 0
 
 Name: Cergy-Pontoise
-Coordinates: {'lon': 2.07805, 'lat': 49.03894}
+Coordinates: 
 Population: 183430
 Like: 0
 
 Name: Champigny-sur-Marne
-Coordinates: {'lon': 2.49366, 'lat': 48.81642}
+Coordinates: 
 Population: 76726
 Like: 0
 
