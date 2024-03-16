@@ -66,19 +66,19 @@ def get_image_url(article_title):
                             headers=headers)
     data = response.json()
     image_url = "https://upload.wikimedia.org/wikipedia/commons/6/6c/No_image_3x4.svg"
-    
-    if "images" in data["parse"]:
-        for image in data["parse"]["images"]:
-            if image.lower().endswith(".jpg"):
-                image_url = f"https://en.wikipedia.org/wiki/File:{image}"
-                break
-    if image_url == "https://upload.wikimedia.org/wikipedia/commons/6/6c/No_image_3x4.svg":
+    try:
+        if "images" in data["parse"]:
+            for image in data["parse"]["images"]:
+                if image.lower().endswith(".jpg"):
+                    image_url = f"https://en.wikipedia.org/wiki/File:{image}"
+                    break
+        download_image(image_url, f"{article_title}.txt")
+        image_url = get_image_content(f"{article_title}.txt")
+        download_image(image_url, "current_image.jpg")
+        remove_file_from_images(f"{article_title}.txt")
+    except KeyError:
         download_image(image_url, "current_image.jpg")
         return image_url
-    download_image(image_url, f"{article_title}.txt")
-    image_url = get_image_content(f"{article_title}.txt")
-    download_image(image_url, "current_image.jpg")
-    remove_file_from_images(f"{article_title}.txt")
     return image_url
 
 def generate_city_description(city_name):
