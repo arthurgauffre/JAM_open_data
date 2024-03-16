@@ -120,7 +120,7 @@ def smash_or_pass_launch(width, height, cities_info):
     # Calculate button positions
     space_between_buttons = 300
     total_button_height = max(like_button.get_height(), x_button.get_height())
-    button_y = (height - total_button_height) // 1.2
+    button_y = (height - total_button_height) // 1.035
     total_button_width = like_button.get_width() + space_between_buttons + x_button.get_width()
     button_x = (width - total_button_width) // 2
     
@@ -183,4 +183,4 @@ def smash_or_pass_launch(width, height, cities_info):
         pygame.display.update()
 
 if __name__ == "__main__":
-    smash_or_pass_launch(600, 800, get_random_city())
+    smash_or_pass_launch(600, 900, get_random_city())
