@@ -1,63 +1,36 @@
 #!/usr/bin/env python3
 
-import subprocess
 import pygame
 import sys
 import random
 import json
+import requests
 
-def generate_city_description(city_name):
-    prompt = f"créer une description de max 200 caractères sur la ville de {city_name}."
-    command_output = subprocess.run(["ollama", "run", "mistral", prompt], capture_output=True).stdout.decode('utf-8')
-    return command_output
+def save_city_data(data):
+    with open('city_data.json', 'w') as file:
+        json.dump(data, file, indent=4)
 
-def read_file_info(filename):
-    cities_info = []
-
-    with open(filename, 'r') as file:
-        city_info = {}
-        for line in file:
-            line = line.strip()
-            if line.startswith('Name:'):
-                city_info['Name'] = line.split(': ')[1]
-            elif line.startswith('Coordinates:'):
-                coords_str = line.split(': ')
-                if len(coords_str) == 2:
-                    lon_lat_str = coords_str[1].strip('{}').split(', ')
-                    if len(lon_lat_str) == 2:
-                        lon, lat = map(float, lon_lat_str)
-                        city_info['Coordinates'] = {'lon': lon, 'lat': lat}
-            elif line.startswith('Population:'):
-                population_str = line.split(': ')
-                if len(population_str) == 2:
-                    city_info['Population'] = int(population_str[1])
-            elif line.startswith('Like:'):
-                like_str = line.split(': ')
-                if len(like_str) == 2:
-                    city_info['Like'] = int(like_str[1])
-                    cities_info.append(city_info)
-                    city_info = {}
-
-    return cities_info
-
-    return cities_info
-
-def update_file_with_data(filename, new_data):
-    # Convert the dictionary data into string format
-    new_lines = []
-    for city_info in new_data:
-        name = city_info.get('Name', 'Unknown')
-        coordinates = city_info.get('Coordinates', '')
-        population = city_info.get('Population', 0)
-        like = city_info.get('Like', 0)
-        new_lines.append(f"Name: {name}\n")
-        new_lines.append(f"Coordinates: {coordinates}\n")
-        new_lines.append(f"Population: {population}\n")
-        new_lines.append(f"Like: {like}\n\n")
-
-    # Write the new data to the file
-    with open(filename, 'w') as file:
-        file.writelines(new_lines)
+def get_random_city():
+    url = 'https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/geonames-all-cities-with-a-population-1000/records'
+    params = {
+        'select': 'name, coordinates, population',
+        'where': 'country_code = "FR" and population > 56000',
+        'limit': 100,
+    }
+    response = requests.get(url, params=params)
+    if response.status_code == 200:
+        data = response.json()
+        data_filter = [data['results'][index] for index in range(0, len(data['results'])) if ' ' not in data['results'][index]['name']]
+        dict_data = {}
+        for index in range(0, len(data_filter)):
+            name = data_filter[index]['name']
+            coordinates = data_filter[index]['coordinates']
+            population = data_filter[index]['population']
+            dict_data[index] = {'name': name, 'Coordinates': coordinates, 'Population': population, 'Like': 0}
+        save_city_data(dict_data)
+        print("City data saved successfully.")
+    else:
+        print("La requête a échoué avec le code :", response.status_code)
 
 def smash_or_pass_launch(width, height, cities_info):
     pygame.init()
@@ -82,10 +55,10 @@ def smash_or_pass_launch(width, height, cities_info):
     button_x = (width - total_button_width) // 2
     
     # Position the buttons
-    like_button_rect = like_button.get_rect(midbottom=(button_x + like_button.get_width() // 2, button_y + total_button_height))
-    x_button_rect = x_button.get_rect(midbottom=(button_x + like_button.get_width() + space_between_buttons + x_button.get_width() // 2, button_y + total_button_height))
+    x_button_rect = like_button.get_rect(midbottom=(button_x + like_button.get_width() // 2, button_y + total_button_height))
+    like_button_rect = x_button.get_rect(midbottom=(button_x + like_button.get_width() + space_between_buttons + x_button.get_width() // 2, button_y + total_button_height))
     
-    random_city = random.choice(cities_info)
+    # Main loop
     while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -95,11 +68,9 @@ def smash_or_pass_launch(width, height, cities_info):
                 if event.button == 1:  # Left mouse button clicked
                     mouse_pos = pygame.mouse.get_pos()
                     if like_button_rect.collidepoint(mouse_pos):
-                        random_city['Like'] += 1
-                        update_file_with_data("cities_info.txt", cities_info)
-                        random_city = random.choice(cities_info)
+                        print("Like")
                     elif x_button_rect.collidepoint(mouse_pos):
-                        random_city = random.choice(cities_info)
+                        print("X")
         
         screen.fill((255, 255, 255))  # Fill the screen with white color
         
@@ -110,4 +81,4 @@ def smash_or_pass_launch(width, height, cities_info):
         pygame.display.update()
 
 if __name__ == "__main__":
-    smash_or_pass_launch(600, 800, read_file_info("cities_info.txt"))
+    smash_or_pass_launch(600, 800, get_random_city())
