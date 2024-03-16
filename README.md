@@ -1,5 +1,8 @@
 # JAM_open_data
 
+# Name:
+Smash My City
+
 ## Description:
 This program is a kind of "smash or pass" game with french cities instead of people.
 
