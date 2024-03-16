@@ -27,11 +27,10 @@ def load_likes():
         return {}
 
 def generate_city_description(city_name):
-    result = []
-
     prompt = f"créer une description de max 200 caractères sur la ville de {city_name}."
-
     command_output = subprocess.run(["ollama", "run", "mistral", prompt], capture_output=True).stdout.decode('utf-8')
+    return command_output
+
 
 def get_random_city():
     url = 'https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/geonames-all-cities-with-a-population-1000/records'
@@ -47,6 +46,26 @@ def get_random_city():
         print("City data saved successfully.")
     else:
         print("La requête a échoué avec le code :", response.status_code)
+
+def parse_json_and_save(json_data, output_file):
+    # Parse the JSON data
+    data = json.loads(json_data)
+    
+    # Extract relevant information
+    results = data['results']
+    
+    # Open a new text file for writing
+    with open(output_file, 'w') as file:
+        # Write each city's information to the file
+        for city in results:
+            name = city['name']
+            coordinates = city['coordinates']
+            population = city['population']
+            like = city['like']
+            file.write(f"Name: {name}\n")
+            file.write(f"Coordinates: {coordinates}\n")
+            file.write(f"Population: {population}\n")
+            file.write(f"Like: {like}\n\n")
 
 if __name__ == "__main__":
     get_random_city()
