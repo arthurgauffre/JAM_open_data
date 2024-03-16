@@ -21,9 +21,20 @@ def smash_or_pass_launch(width, height):
     x_button = pygame.image.load("x_button.png")
     
     # Scale buttons to desired size
-    button_size = (50, 50)
+    button_size = (130, 130)
     like_button = pygame.transform.scale(like_button, button_size)
     x_button = pygame.transform.scale(x_button, button_size)
+
+    # Calculate button positions
+    space_between_buttons = 300
+    total_button_height = max(like_button.get_height(), x_button.get_height())
+    button_y = (height - total_button_height) // 1.2
+    total_button_width = like_button.get_width() + space_between_buttons + x_button.get_width()
+    button_x = (width - total_button_width) // 2
+    
+    # Position the buttons
+    like_button_rect = like_button.get_rect(midbottom=(button_x + like_button.get_width() // 2, button_y + total_button_height))
+    x_button_rect = x_button.get_rect(midbottom=(button_x + like_button.get_width() + space_between_buttons + x_button.get_width() // 2, button_y + total_button_height))
     
     while True:
         for event in pygame.event.get():
@@ -40,15 +51,11 @@ def smash_or_pass_launch(width, height):
         
         screen.fill((255, 255, 255))  # Fill the screen with white color
         
-        # Display like button at the bottom right corner
-        like_button_rect = like_button.get_rect(bottomright=(width - 20, height - 20))
+        # Display buttons at their positions
         screen.blit(like_button, like_button_rect)
-        
-        # Display X button at the bottom left corner
-        x_button_rect = x_button.get_rect(bottomleft=(20, height - 20))
         screen.blit(x_button, x_button_rect)
         
         pygame.display.update()
 
 if __name__ == "__main__":
-    smash_or_pass_launch(600, 800)
+    smash_or_pass_launch(800, 1000)
