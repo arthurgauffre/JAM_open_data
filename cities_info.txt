@@ -41,7 +41,7 @@ Like: 0
 Name: Bordeaux
 Coordinates: 
 Population: 260958
-Like: 1
+Like: 0
 
 Name: Dunkerque
 Coordinates: 
@@ -356,7 +356,7 @@ Like: 0
 Name: Perpignan
 Coordinates: 
 Population: 110706
-Like: 1
+Like: 0
 
 Name: Rouen
 Coordinates: 

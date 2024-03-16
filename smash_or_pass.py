@@ -87,12 +87,6 @@ def smash_or_pass_launch(width, height, cities_info):
     
     random_city = random.choice(cities_info)
     while True:
-        print("City:", random_city.get('Name', 'N/A'))
-        print("Population:", random_city.get('Population', 'N/A'))
-        print("Coordinates:", random_city.get('Coordinates', 'N/A'))
-        print("Like:", random_city.get('Like', 'N/A'))
-        print()  # Print an empty line for separation
-        
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
@@ -104,10 +98,8 @@ def smash_or_pass_launch(width, height, cities_info):
                         random_city['Like'] += 1
                         update_file_with_data("cities_info.txt", cities_info)
                         random_city = random.choice(cities_info)
-                        print("Smash")
                     elif x_button_rect.collidepoint(mouse_pos):
                         random_city = random.choice(cities_info)
-                        print("Pass")
         
         screen.fill((255, 255, 255))  # Fill the screen with white color
         
