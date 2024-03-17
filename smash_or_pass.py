@@ -98,6 +98,12 @@ def get_random_city():
         data_filter = [data['results'][index] for index in range(0, len(data['results'])) if ' ' not in data['results'][index]['name']]
         return data_filter
 
+def print_city_classement(city_counts):
+    sorted_cities = sorted(city_counts.items(), key=lambda x: x[1], reverse=True)
+    print("City Classement:")
+    for i, (city, count) in enumerate(sorted_cities):
+        print(f"{i+1}. {city} - {count} likes")
+
 def smash_or_pass_launch(width, height, cities_info):
     pygame.init()
     screen = pygame.display.set_mode((width, height))
@@ -129,6 +135,7 @@ def smash_or_pass_launch(width, height, cities_info):
     like_button_rect = x_button.get_rect(midbottom=(button_x + like_button.get_width() + space_between_buttons + x_button.get_width() // 2, button_y + total_button_height))
     
     # Main loop
+    city_counts = {city['name']: 0 for city in cities_info}  # Initialize counts for each city
     random_city = cities_info[random.randint(0, len(cities_info) - 1)]
     y_pos = 0  # Position of the first line
 
@@ -144,17 +151,21 @@ def smash_or_pass_launch(width, height, cities_info):
                 if event.button == 1:  # Left mouse button clicked
                     mouse_pos = pygame.mouse.get_pos()
                     if like_button_rect.collidepoint(mouse_pos):
+                        # Increase the count for the current city
+                        city_counts[random_city['name']] += 1
                         random_city = cities_info[random.randint(0, len(cities_info) - 1)]
                         remove_file_from_images("current_image.jpg")
                         get_image_url(random_city['name'])
                         image = pygame.image.load("images/current_image.jpg")
                         image = pygame.transform.scale(image, (500, 300))
+                        print_city_classement(city_counts)
                     elif x_button_rect.collidepoint(mouse_pos):
                         random_city = cities_info[random.randint(0, len(cities_info) - 1)]
                         remove_file_from_images("current_image.jpg")
                         get_image_url(random_city['name'])
                         image = pygame.image.load("images/current_image.jpg")
                         image = pygame.transform.scale(image, (500, 300))
+                        print(city_counts)
         
         screen.fill((255, 255, 255))  # Fill the screen with white color
         
@@ -173,6 +184,12 @@ def smash_or_pass_launch(width, height, cities_info):
         city_name_text = font.render(random_city['name'], True, (0, 0, 0))
         city_name_rect = city_name_text.get_rect(center=(width // 2, height // 5))
         screen.blit(city_name_text, city_name_rect)
+        
+        # Display the count for the current city
+        city_count_text = font.render(f"Like: {city_counts[random_city['name']]}",
+                                      True, (0, 0, 0))
+        city_count_rect = city_count_text.get_rect(midbottom=(width // 2, height - 20))
+        screen.blit(city_count_text, city_count_rect)
         
         pygame.display.update()
 
