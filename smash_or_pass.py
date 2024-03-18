@@ -143,7 +143,10 @@ def smash_or_pass_launch(width, height, cities_info):
     y_pos = 0  # Position of the first line
 
     get_image_url(random_city['name'])
-    image = pygame.image.load("images/current_image.jpg")
+    try:
+        image = pygame.image.load("images/current_image.jpg")
+    except:
+        image = pygame.image.load("images/no_image.jpg")
     image = pygame.transform.scale(image, (500, 300))
     while True:
         for event in pygame.event.get():
@@ -159,15 +162,20 @@ def smash_or_pass_launch(width, height, cities_info):
                         random_city = cities_info[random.randint(0, len(cities_info) - 1)]
                         remove_file_from_images("current_image.jpg")
                         get_image_url(random_city['name'])
-                        image = pygame.image.load("images/current_image.jpg")
+                        try:
+                            image = pygame.image.load("images/current_image.jpg")
+                        except:
+                            image = pygame.image.load("images/no_image.jpg")
                         image = pygame.transform.scale(image, (500, 300))
                     elif x_button_rect.collidepoint(mouse_pos):
                         random_city = cities_info[random.randint(0, len(cities_info) - 1)]
                         remove_file_from_images("current_image.jpg")
                         get_image_url(random_city['name'])
-                        image = pygame.image.load("images/current_image.jpg")
+                        try:
+                            image = pygame.image.load("images/current_image.jpg")
+                        except:
+                            image = pygame.image.load("images/no_image.jpg")
                         image = pygame.transform.scale(image, (500, 300))
-                        print(city_counts)
                     elif classement_button_rect.collidepoint(mouse_pos):  # Check if classement button is clicked
                         print_city_classement(city_counts)
         
